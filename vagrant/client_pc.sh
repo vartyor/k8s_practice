@@ -29,7 +29,7 @@ echo "192.168.10.10 k8s-m" >> /etc/hosts
 for (( i=1; i<=$1; i++  )); do echo "192.168.10.10$i k8s-w$i" >> /etc/hosts; done
 
 echo "[TASK 8] Install kubectl"
-curl -s -LO https://dl.k8s.io/release/v1.27.4/bin/linux/amd64/kubectl 2>&1
+curl -s -LO https://dl.k8s.io/release/v1.27.0/bin/linux/amd64/kubectl 2>&1
 install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl 2>&1
 
 echo "[TASK 9] Config kubeconfig"
